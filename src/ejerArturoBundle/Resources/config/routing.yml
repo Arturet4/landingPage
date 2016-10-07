@@ -1,0 +1,7 @@
+ejer_arturo_homepage:
+    path:     /
+    defaults: { _controller: ejerArturoBundle:Default:index }
+
+equipo_homepage:
+    path:     /equipo/{numero}
+    defaults: { _controller: ejerArturoBundle:Default:equipo }

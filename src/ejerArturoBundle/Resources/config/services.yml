@@ -1,0 +1,4 @@
+services:
+#    ejer_arturo.example:
+#        class: ejerArturoBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

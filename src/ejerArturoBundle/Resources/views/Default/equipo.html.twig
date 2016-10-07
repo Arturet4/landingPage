@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Equipo{{numero}}{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/css/uikit.min.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/estilos.css')}}">
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}<br>
+        <div>
+        {% if numero==1 %}
+
+        <h1>¡AMUNT VALENCIA!</h1>
+            <img src="{{asset('imagenes/valenciacf2.jpg')}}"><br>
+        {% elseif numero==2 %}
+
+        <h1>¡MACHO LLEVANT!</h1>
+        <img src="{{asset('imagenes/levanteud.jpg')}}"><br>
+        {% endif %}
+        <br>
+        <a href="/" class="uk-button uk-button-primary">Volver</a>
+        </div>
+        {% endblock %}
+    </body>
+</html>​
